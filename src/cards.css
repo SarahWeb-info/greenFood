@@ -1,0 +1,55 @@
+
+.smCards{
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 98vw;
+    height: 150px;
+    margin: 1vh 5px;
+}
+@media (min-width: 800px) {
+    .smCards{
+        width: 350px;
+    }
+}
+
+.smcard-ImgDiv{
+    width: 200px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.smcard-ImgDiv img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.smcard-ContentDiv{
+    width: 70%;
+    height: 100%;
+    padding: 0 3px;
+}
+.smcard-ContentDiv>div{
+    min-width: 200px;
+}
+.cardHeading{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.smcard-detail{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    text-align: left !important;
+}
+.dashed{
+    border-bottom: 2px dashed gray;
+}
+.strike-through {
+    text-decoration: line-through; 
+    color: red;
+  }

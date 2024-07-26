@@ -1,0 +1,107 @@
+:root{
+    --navHeight : 8vh;
+    --navFontColor : #f7f7f7; 
+    --navFonthighlight : var(--highlight) ; 
+}
+
+.navbar{
+    box-sizing: border-box !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1100;
+    width: 100vw;
+    height: var(--navHeight);
+    padding: 1% 5%;
+    margin: 0;
+    background: transparent;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+  
+.navbar *{
+    font-size: 1.2rem;
+}
+.navbar a{
+    padding: 0 1vw;
+}
+.navbar>button{
+    color:var(--navFontColor);
+    border: 0.1rem solid var(--navFontColor);
+    background-color: transparent;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.NavMenuBtn:hover {
+    color: var(--highlight);
+    border: 0.1rem solid var(--highlight);
+}
+
+.navBtn:hover {
+    border: 0.1rem solid var(--highlight);
+    background-color: var(--highlight);
+}
+
+nav{
+    position: absolute;
+    left : 0 ;
+    top : var(--navHeight);
+    width: 100vw;
+    height: 93vh;
+    z-index: 110;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 2vw;
+    gap : 12px;
+    background-color: var(--navFontColor);
+    transition: 0.2s;
+    border-right: 5px solid var(--highlight);
+}
+nav a{
+    color: black ;
+}
+nav a:hover{
+    color:  var(--highlight);
+}
+
+.navbar form{
+    width: 100vw;
+    max-width: 500px !important;
+}
+
+
+@media screen and (min-width: 750px) {
+    nav{
+        background-color: transparent;
+        position: relative;
+        top : 0.5vh;
+        width: auto;
+        height: auto;
+        z-index: 110;
+        flex-direction: row;
+        transition: 1s;
+        gap : 3px;
+        padding: 0;
+        border-right: 0px solid var(--highlight);
+    }
+    nav a{
+        color:var(--navFontColor);
+    }
+}

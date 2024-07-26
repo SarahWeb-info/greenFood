@@ -1,0 +1,50 @@
+.dialog {
+    position: fixed;
+    top : 0;
+    left : 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1200;
+    background-color: rgba(255, 255, 255, 0.359);
+    transition: 0.3s all;
+}
+.dialogBlur{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    z-index: 0;
+}
+
+.dialogContent{
+    position: absolute;
+    top : 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: auto;
+    max-width: 750px;
+    height: 50vh;
+    max-height: 750px;
+    z-index: 1;
+    background-color: var(--col1);  
+    border: 1px solid lightgray;
+    border-radius: 0.5%;
+}
+.dialogContent>button{
+    position: absolute;
+    right: 0.5%;
+    top : 0.5%;
+    font-size: 1.5rem;
+    border: 0;
+    color: var(--highlight);
+    background-color: var(--col1);
+    z-index: 1020;
+}
+.dialogContent>button:hover{
+    color: var(--col1);
+    background-color: gray;
+}
+.dialogContent img{
+    width: 100%;
+    height: 100%;
+}

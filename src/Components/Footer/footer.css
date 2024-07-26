@@ -1,0 +1,30 @@
+.footer{
+    background-color: var(--col2);
+    color: var(--col1);
+    padding:1% 2%;
+}
+.footer a , .footer p{
+    color: var(--col1);
+    margin: 0.5rem 0;
+}
+.footer span{
+    color: var(--highlight);
+    font-size: 1.2rem;
+}
+.footer div{
+    width: fit-content;
+    min-width: 200px;
+}
+.footerIcons span{
+    background-color: var(--col1);
+    font-size: 1.5rem;
+}
+.footer_QuickLinks>div a:hover{
+    padding-left: 0.5rem;
+    transition: 0.2s;
+}
+
+.footerEnd{
+    width: 100% !important;
+    border-top: 2px solid;
+}

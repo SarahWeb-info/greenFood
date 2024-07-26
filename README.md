@@ -1,0 +1,5 @@
+- This is a React Sample Code Website .
+- This webpage is made by Sarah Web . All rights reserved .
+- Its is make for revision of React.
+- Any data used in this website is not authentic
+- I have made some helper components for my further work , Carousel , Slider , navbar , upBtn , footer , grid .

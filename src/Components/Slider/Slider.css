@@ -1,0 +1,132 @@
+.sliderContainer{
+    position: relative;
+    overflow: hidden ;
+    box-sizing: border-box;
+}
+
+.sliderContainer *{
+    position: relative;
+    overflow: hidden ;
+    box-sizing: border-box;
+}
+.sliderContainer>div{
+    height: 85%;
+    overflow: hidden;
+}
+.slider{
+    transition: 0.8s ease-in;
+    width: auto;
+    height: 100%;
+}
+.slider li{
+    height: 100%;
+}
+.slider li>div{
+    height: 95%;
+    width: 90%;
+    padding: 2%;
+}
+.sliderContent{
+    height: auto;
+}
+.sliderContent , .sliderContent>div{
+    height: auto;
+    width: auto;
+}
+.sliderContent img{   
+    width: 120px;
+    height: 120px;
+    margin: 3px;
+    border-radius: 50%;
+    outline:3px solid var(--highlight);
+    border: 2px solid transparent;
+}
+.sliderContent p{
+    margin: 0;
+    padding: 0;
+}
+
+.sliderLabel_1{
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.slider-Comment{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-clamp: 5;
+    -webkit-line-clamp: 5;
+    text-overflow: ellipsis;
+    text-align: left !important;
+}
+
+.arrows{
+    margin: 0;
+    padding: 1vw;
+    position: absolute;
+    left: 50%;
+    top : 50%;
+    transform: translate(-50% , -50%);
+}
+.arrows>div{
+    height: auto;
+    min-height: 250px;
+    width: auto;
+    min-width: 25px;
+    color: var(--fadeGray);
+    font-size:28px;
+    font-weight: bolder;
+    background-color: rgba(128, 128, 128, 0.132);
+}
+.arrows>div:hover{
+    color: var(--highlight);
+    transition: 0.5s ease-in;
+}
+
+.sliderDots{
+    position: absolute;
+    right: 1%;
+    bottom: 1%;
+    z-index: 10;
+    width: 100%;
+    height: 8%;
+    max-height: 16px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliderDots>div{
+    -moz-transform: skew(13deg, 0deg);
+    -webkit-transform: skew(13deg, 0deg);
+    -o-transform: skew(13deg, 0deg);
+    -ms-transform: skew(13deg, 0deg);
+    transform: skew(13deg, 0deg);
+    width: 10px;
+    height: 100%;
+    padding: 0;
+    margin: 1.5px;
+    border-radius: 36%;
+    background-color: var(--highlight);
+    border: 0.3px solid var(--highlight);
+    -webkit-box-shadow: inset 4px 4px 9px 0px var(--fadeGray);
+    box-shadow: inset 4px 4px 9px 0px var(--fadeGray);
+}
+
+.sliderDots .active{ 
+    transition: 0.8s ease-in;
+    width: 35px;
+    background-color: var(--highlight) !important;
+} 
+
+.slideCount{
+    position: absolute;
+    right: 1%;
+    bottom: 1%;
+    z-index: 20;
+    width: fit-content;
+    height: 8%;
+    max-height: 16px;
+    color: var(--fadeGray);
+}
